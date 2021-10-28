@@ -220,7 +220,7 @@ html {
 }
 
 .header_menu.active {
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .header_menu{
@@ -237,6 +237,7 @@ html {
     transition: all ease 0.8s;
     z-index: 10;
 }
+.header_menu-close-list,
 .header_menu-close{
     position: absolute;
     top: 0;
@@ -299,6 +300,43 @@ html {
     margin-top: 10px;
     color: #fff;
 }
+/* header tabmode */
+.header_menu-tabmode{
+    width: 334px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #555;
+    padding: 32px ;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: all ease 0.8s;
+    z-index: 10;
+    background-color: #555;
+    display: none;
+}
+.header_menu-tabmode a {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    line-height: 2.5;
+}
+.header_menu-tabmode-heading{
+    font-size: 24px;
+    font-weight: 700;
+}
+.header_menu-tabmode-step1 {
+    font-size: 14px;
+    margin-left: 24px;
+}
+
+.header_menu-tabmode-step2 {
+    font-size: 14px;
+    margin-left: 48px;
+}
+
 .image-box{
     width: 262px;
     height: 262px;
@@ -733,10 +771,10 @@ html {
 }
 .beaches_image-strikethrough {
     position: absolute;
-    top: 2250px;
-    left: 62.5%;
+    top: 24px;
+    left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: none;
 }
 
 .beaches_image-strikethrough-item {
@@ -746,9 +784,11 @@ html {
     margin: 0 10px;
     cursor: pointer;
 }
+
 .beaches_image-strikethrough-item.active {
     background-color: #fff;
 }
+
 
 .beaches_tour{
     margin-top: 120px;
@@ -845,7 +885,7 @@ html {
 .packages_desc-symbol{
     display: flex;
     position: absolute;
-    margin-left: 260px;
+    margin-left: 70%;
     margin-top: -50px;
     padding: 14px;
     border-radius: 50%;
@@ -928,7 +968,7 @@ html {
 .footer{
     background: url(../img/parallax-7-footer.jpg) no-repeat center;
     width: 100%;
-    height: 625px;
+    height: 100%;
     background-size: cover;
     padding: 80px 0;
 }
@@ -1041,7 +1081,7 @@ html {
 .text2{
     font-size: 12px;
     color: #ffffff;
-    float: right;
+    margin-left: 50%;
     margin-right: 0px;
     letter-spacing: 2px;
 }

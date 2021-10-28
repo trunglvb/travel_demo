@@ -3,7 +3,9 @@
     display: block;
     padding: 0;
 }
-
+.mt-40{
+    margin-left: 40px;
+}
 .grid.wide {
     max-width: 1170px;
     margin: 0 auto;
@@ -140,7 +142,7 @@
 }
 
 /* >= Tablet */
-/* @media (min-width: 740px) {
+@media (min-width: 740px) {
     .row {
         margin-left: -8px;
         margin-right: -8px;
@@ -247,7 +249,7 @@
     .m-o-11 {
         margin-left: 91.66667%;
     }
-} */
+}
 
 /* PC medium resolution > 1200px */
 @media (min-width: 1200px) {
@@ -446,8 +448,8 @@
     }
     
     .wide .row.sm-gutter {
-        margin-left: -5px;
-        margin-right: -5px;
+        margin-left: -8px;
+        margin-right: -8px;
     }
 
     .wide .col {
@@ -456,8 +458,8 @@
     }
 
     .wide .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .wide .wl-0 {
